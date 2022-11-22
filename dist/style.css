@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+}
+
+header{
+    /* color:black; */
+    /* background-color: white; */
+    color:white;
+    background: rgba(0,0,0,0.3)
+}
+
+header nav{
+    padding:15px 30px;
+}
+
+header nav .logo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo h1{
+    margin:0 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header nav .logo h1:hover{
+    color:red;
+cursor: pointer;
+}
+
+header nav .logo img{
+    width: 80px;
+    height:80px;
+    filter: invert(100);
+}
+
+header nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .links a{
+    /* color:black; */
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    margin:0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav .links a:hover{
+    color:Red;
+}
+
+
+header nav .links .join{
+    padding:12px 20px;
+    background-color: red;
+    color:white;
+    cursor:pointer;
+    border-radius: 6px;
+    border:2px solid red;
+}
+
+header nav .links .join:hover{
+    color:white;
+    background-color: black;
+    border:2px solid black;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    color:white;
+    padding:15px;
+    font-weight: 600;
+}
+
+footer p strong{
+    color:red
+}
+
+footer p a{
+    /* color:black; */
+    color:white;
+    font-size:20px;
+    margin:0 6px;
+}
+
+footer p a:hover{
+    color:red;
+}
+
+
+/* home page or landing page */
+section{
+    /* color:black; */
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    /* background-color: white; */
+    margin:50px 200px;
+    padding:50px 100px;
+}
+
+.hero .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 80px 0 0;
+}
+
+.hero .left .wrap p:nth-child(1){
+    background-color: red;
+    padding:8px 16px; 
+    display: inline-block;   
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.hero .left .wrap h2{
+    font-size:72px;
+    margin:20px 0;
+}
+
+.hero .left .wrap p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.hero .left .wrap button{
+    margin:30px 0;
+    padding:10px 30px;
+    font-size:22px;
+    background-color: red;
+    color:white;
+    border:2px solid red;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero .left .wrap button:hover{
+    color:white;
+    background-color: black;
+    border:2px solid black;
+
+}
+
+.hero .right{
+    /* background:rgba(255,0,0,0.65); */
+    padding:0;
+    border-radius: 50%;
+}
+
+.hero .right img{
+   width:450px;
+   height: 450px;
+   border-radius: 50%;
+   margin:5px;
+   margin-top: 100px;
+}
+
+.about .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 0 80px;
+}
+
+/* login page */
+.login .wrap-form{
+    background: white;
+    color:black;
+    width:420px;
+    margin:50px;
+    padding:30px;
+}
+
+.login .wrap-form h2{
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:0 0 30px 0;
+}
+
+.form-data{
+    margin:20px 0 30px 0;
+}
+
+.form-data label{
+    display: block;
+    margin:10px 0;
+    font-size:18px;
+    font-weight: 700;
+}
+
+.form-data input{
+    width:100%;
+    height:32px;
+    padding:6px;
+    outline:none;
+    border:none;
+    border-bottom: 1px solid lightgray;
+}
+
+.form-data input:focus{
+    background: lightgray;
+}
+
+.form-data input[type=submit]{
+    width:100%;
+    height:auto;
+    display: block;
+    margin:40px auto 0 auto;
+    background: red;
+    border:2px solid red;
+    border-radius: 6px;
+    color:white;
+    font-size: 20px;
+    padding:4px;
+    cursor: pointer;
+}
+
+.form-data input[type=submit]:hover{
+    background: black;
+    border:2px solid black;
+    color:white;
+}
+
+.form-data input[type=radio]{
+    width:16px;
+    height: 16px;
+}
+
+.form-data .radio-wrap{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.form-data .radio-wrap span{
+    margin:0 20px 0 5px;
+}
+
+.register{
+    margin:20px 200px;
+    padding:20px 100px;
+}
+
+.nut{
+    margin:60px 50px;
+    padding:40px;
+    background-color: white;
+    color:black;
+}
+
+.nut h2{
+    font-size:36px;
+    text-transform: uppercase;
+    margin:0 0 30px 0
+}
+
+.nut img{
+    width:500px;
+    float: left;
+    margin:10px 30px 10px 0;
+}
+
+
+
+.nut p{
+    text-align: justify;
+    margin:20px 0;
+}
+
+.nut .wrap-nut .start-para{
+    margin:70px 0 20px 0;
+}
+
+.nut h3{
+    margin:50px 0 0 0;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.nut table{
+    width:100%;
+}
+
+.nut table,
+.nut table tr,
+.nut table th,
+.nut table td{
+    border:1px solid black; 
+    border-collapse: collapse;
+    padding:6px;
+}
+
+.nut table th{
+    background-color: #007ACC;
+    color:white;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px 6px;
+}
+
+.nut ul li{
+    margin:5px 30px;
+}
+
+.blog p a{
+    color:red;
+    text-decoration: none;
+}
+
+.blog .wrap-nut img{
+    float:none;
+    width:100%;
+    display: block;
+    margin:auto;
+    border-radius: 6px;
+}
+
+
+.blog .wrap-nu-right{
+    width:600px;
+    margin:0 60px; 
+}
+
+.blog .wrap-nu-right input{
+    width:100%;
+    margin:20px 0 0  0;
+    padding: 6px;
+    outline:none;
+} 
+
+.blog .category p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blog .posts .post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.blog .category p:hover,
+.blog .posts .post:hover{
+    color:red;
+}
+
+.blog .posts .post img{
+    width:100px;
+    height:100px;
+    border-radius: 6px;
+}
+
+.blog .tags{
+    padding: 15px 0;
+}
+
+.blog .tags p{
+    border:2px solid red;
+    border-radius: 3px;
+    padding:10px;
+    display: inline-block;
+    margin:5px;
+    cursor: pointer;
+}
+
+
+.blog .tags p:hover{
+    background-color: red;
+    color:white;
+}
+
+.mini-head{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.blog ol li{
+    margin:5px 50px;
+}
+
+#login{
+    margin:90px 50px;
+}
